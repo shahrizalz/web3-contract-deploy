@@ -51,6 +51,13 @@ const sendset = () => {
     })
 }
 
-//read get method
+//uncomment below function call to try
+//to deploy
+// deploymycontract()
+
+
+//to call callget() function
 callget()
+
+//to call sendset()
 // sendset()
