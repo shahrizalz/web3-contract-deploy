@@ -8,7 +8,7 @@ var myContract = new web3.eth.Contract(abi, '0xBf7035bE32D03F49EA13092A5dB201fE1
     gasPrice: '20000000000' // default gas price in wei, 20 gwei in this case
 });
 
-
+console.log(myContract);
 
 const deploymycontract = () => {
     myContract.deploy({
@@ -45,9 +45,13 @@ const sendset = () => {
         from: '0x8e94f1e44a3219a02520bc15e1f2a11c6fb5738a',
         gas: 1500000,
         gasPrice: '0'//'30000000000000' 
-    }).then(res => {
-        console.log(res);
-
+    }).on('transactionHash', function(hash){
+        console.log("hash is: "+hash);
+        
+    })
+    .on('receipt', function(receipt){
+        console.log("receipt is: "+JSON.stringify(receipt,null,4));
+        
     })
 }
 
@@ -57,7 +61,7 @@ const sendset = () => {
 
 
 //to call callget() function
-callget()
+// callget()
 
 //to call sendset()
 // sendset()

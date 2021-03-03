@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ethereumjs/common": "^2.0.0",
+    "@ethereumjs/tx": "^3.0.1",
+    "axios": "^0.21.1",
     "web3": "^1.2.7"
   }
 }
