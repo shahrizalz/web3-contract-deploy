@@ -1,6 +1,6 @@
-let abi = require('./abi.json')
-let bytecode = require('./bytecode.json')
-const config = require('./config')
+let abi = require('../abi.json')
+let bytecode = require('../bytecode.json')
+const config = require('../config')
 const axios = require('axios');
 const { Transaction } = require('@ethereumjs/tx');
 const Common = require('@ethereumjs/common').default;

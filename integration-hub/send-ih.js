@@ -1,5 +1,5 @@
-let abi = require('./abi.json');
-const config = require('./config');
+let abi = require('../abi.json');
+const config = require('../config');
 const { Transaction } = require('@ethereumjs/tx');
 const Common = require('@ethereumjs/common').default;
 const axios = require('axios');

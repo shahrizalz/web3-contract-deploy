@@ -1,6 +1,6 @@
 var Web3 = require('web3');
 var web3 = new Web3('http://18.141.95.89:8546');
-let abi = require('./abi.json')
+let abi = require('../abi.json')
 const { Transaction } = require('@ethereumjs/tx');
 const Common = require('@ethereumjs/common').default;
 
